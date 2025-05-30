@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+</head>
+<body>
+    <div class="intro">
+        <header>
+            <div class="head">
+                <img src="images/Logo.svg" alt="logo">
+            </div>
+            <div class="head">
+                <nav>
+                    <a href=""><img src="myapp/img/youtube logo.svg" alt=""></a>
+                    <a href=""><img src="images/vk logo.svg" alt=""></a>
+                    <a href=""><img src="images/facebook-rect logo.png" alt=""></a>
+                    <a href=""><img src="Myproject\myapp\static\myapp\img\twitter-square logo.svg" alt=""></a>
+                    <a href=""><img src="images/twitch logo.svg" alt=""></a>
+                    <a href=""><img src="images/instagram-square logo.svg" alt=""></a>                        
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <p>Найт-Сити изменит тебя навсегда!</p>
+        <br>
+        <span>Cyberpunk 2077 — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</span>
+    </div>
+
+    <div class="images">
+        <div class="left_images">
+            <div id="img_1"></div>
+            <div id="img_2"></div>
+        </div>
+        <div id="img_3"></div>
+    </div>
+
+    <div class="img_4"></div>
+
+    <div class="order_block">
+        <div class="container" style="margin: 0 auto; display: flex; padding-top: 3%;">
+            <div class="star"><p style="transform: rotate(-47deg); font-size: 25px; font-family: 'Archangelsk'; color: yellow;">акция</p></div>
+            <p style="color: #fff; float: left; margin: 5%;">Играй и выигрывай!</p>
+        </div>
+
+        <div class="container" style="margin: 0 auto;">
+            <span style="color: #fff; display: block; max-width: 950px; font-size: 18px;">Играй в Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series X или Sony PlayStation 5! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</span>
+            
+            <div style="max-width: 500px; margin: 10% 5% 0 0; float: left;">
+                <input type="text" placeholder="Как тебя зовут?" class="input">
+                <input type="email" placeholder="Твой е-mail" class="input">
+
+                <label class="file_upload">
+                    <input type="file" style="display: none;" class="input">
+                    Прикрепить скриншот<br>
+                    .png / .jpg / .pdf
+                </label>
+
+                <button type="submit">Отправить</button>
+
+                <label class='agree'>
+                    <input type="checkbox" style="margin-right: 1%;">
+                    Согласен на обработку персональных данных
+                </label>
+            </div>
+
+            <div class="xbox">
+                <img src="Myproject\myapp\static\myapp\img\xbox.png" width="295px" height="350px" alt="" style="position: relative; left: 40px;">
+            </div>
+            <div class="ps">
+                <img src="images/ps.png" width="295px" height="350px" alt="" style="position: relative; left: 120px;">
+            </div>
+        </div>  
+    </div>
+
+    <div class="img_5"></div>
+
+        <div class="hp_block">
+            <div class="container" style="margin: 0 auto;">
+                <img src="images/hp.png" alt="" class="hp_img">
+                <div style=" padding-top: 5%; text-align:left; position: relative; left: 5%; height: 470px;">
+                    <p style="font-size: 62px;">Полное погружение вместе с HP</p>
+                    <span>Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</span>
+                    <div class="span"><img src="images/Vector (1).svg" alt=""> <span>Кристальная четкость изображения</span></div>
+                    <div class="span"><img src="images/Vector.svg" alt=""> <span>Яркие насыщенные цвета</span></div>
+                    <div class="span"><img src="images/Vector (2).svg" alt=""> <span>Быстрые движения и плавный геймплей</span></div> 
+                </div>
+            </div>
+            <div class="container" style="margin: 0 auto 0;">
+                <div class="img_6">
+                    <img src="images/hp.svg" alt="logo" width="50px" height="50px">
+                    <img src="images/x.png" alt="x" width="70px" height="15px">
+                    <img src="images/Logo.svg" alt="logo" style="margin-right: 100px;">
+                    <button type="submit">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+    <div class="buy_block">
+        <div class="img_7"></div>
+        <div style="grid-column: 2;">
+            <div style="margin: 5% 0% 0% 4%;">
+                <p style="font-size: 80px; margin-bottom: 3%;">Купить игру <br>Cyberpunk 2077</p>
+                <span style="color: aqua;">В комплект входит:</span>
+                <div class="span"><img src="images/Vector (4).svg" alt=""><span>Футляр с игровыми дисками</span></div>
+                <div class="span"><img src="images/Vector (3).svg" alt=""><span>Футляр с кодом для загрузки игры и дисками (pc)</span></div>
+                <div class="span"><img src="images/Vector (5).svg" alt=""><span>Справочник с информацией об игровом мире</span></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <img src="images/Logo.svg" alt="">
+        </div>
+        <div class="hr">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</div>
+    </footer>
+</body>
+</html>

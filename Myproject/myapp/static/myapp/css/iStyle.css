@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+aside {
+    width: 30vh;
+    height: 100vh;
+    background-color: darkgoldenrod;
+    display: flex;
+}
+
+aside h1 {
+    margin: 0; 
+    font-family: 'Boldonse';
+}
