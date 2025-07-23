@@ -1,15 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 
-dict_of_posts = {
-    1:'index.html'
-}
-
-def post(request, id):
-    try:
-        return render(request, f"myapp/{dict_of_posts[id]}")
-    except:
-        return HttpResponse("<h1>Error</h1>")
+def index(request):
+    return render(request, f"myapp/index.html")
 
 def about(request):
     return HttpResponse("<h1>About</h1>")
+
+def page_not_found(request, exception):
+    return HttpResponseNotFound("<h1>Страница не найдена</h1>")
