@@ -50,7 +50,7 @@
         <div class="container" style="margin: 0 auto;">
             <span style="color: #fff; display: block; max-width: 950px; font-size: 18px;">Играй в Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series X или Sony PlayStation 5! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</span>
             
-            <div style="max-width: 500px; margin: 10% 5% 0 0; float: left;">
+            <div style="max-width: 500px; margin: 7% 5% 0 0; float: left;">
                 <input type="text" placeholder="Как тебя зовут?" class="input">
                 <input type="email" placeholder="Твой е-mail" class="input">
 
@@ -60,7 +60,7 @@
                     .png / .jpg / .pdf
                 </label>
 
-                <button type="submit">Отправить</button>
+                <button id="button1" type="submit">Отправить</button>
 
                 <label class='agree'>
                     <input type="checkbox" style="margin-right: 1%;">
@@ -83,15 +83,17 @@
                 <div class="xbox1">
                     <img src="{% static 'myapp/img/xbox.png' %}" width="110px" height="150px">
                 </div>       
+
                 <div class="ps1">
                     <img src="{% static 'myapp/img/ps.png' %}" width="110px" height="150px">
-                </div>    
+                </div> 
+
             </div>
             
             <p style="color: #fff; margin: 3%; font-size: 35px;">Играй и выигрывай!</p>
-             <span style="color: #fff; display: block; font-size: 18px; margin: 3%;">Играй в Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series X или Sony PlayStation 5! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</span>
+            <span style="color: #fff; display: block; font-size: 18px; margin: 3%;">Играй в Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series X или Sony PlayStation 5! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</span>
             
-            <div style="max-width: 400px; margin: 10% 3% ;">
+            <div style="max-width: 400px; margin: 10% 3%;">
                 <input type="text" placeholder="Как тебя зовут?" class="input">
                 <input type="email" placeholder="Твой е-mail" class="input">
 
@@ -99,9 +101,9 @@
                     <input type="file" style="display: none;" class="input">
                     Прикрепить скриншот<br>
                     .png / .jpg / .pdf
-                </label>
+                </label>    
 
-                <button type="submit">Отправить</button>
+                    <button id="button1" type="submit">Отправить</button>
 
                 <label class='agree'>
                     <input type="checkbox" style="margin-right: 1%;">
@@ -111,41 +113,44 @@
         </div>
     </div>
 
-    <div class="img_5"></div>
+    <div class="hp_block">
 
-        <div class="hp_block">
-            <div class="container" style="margin: 0 auto;">
-                <img src="{% static 'myapp/img/hp.png' %}" alt="" class="hp_img">
-                <div style=" padding-top: 5%; text-align:left; position: relative; left: 5%; height: 470px;">
-                    <p style="font-size: 62px;">Полное погружение вместе с HP</p>
-                    <span>Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</span>
-                    <div class="span"><img src="{% static 'myapp/img/Vector (1).svg' %}" alt=""> <span>Кристальная четкость изображения</span></div>
-                    <div class="span"><img src="{% static 'myapp/img/Vector.svg' %}" alt=""> <span>Яркие насыщенные цвета</span></div>
-                    <div class="span"><img src="{% static 'myapp/img/Vector (2).svg' %}" alt=""> <span>Быстрые движения и плавный геймплей</span></div> 
-                </div>
-            </div>
-            <div class="container" style="margin: 0 auto 0;">
-                <div class="img_6">
+        <div class="hp_container">
+
+            <img src="{% static 'myapp/img/hp.png' %}" alt="" class="hp_img">
+
+            <div class="hp_images">
                     <img src="{% static 'myapp/img/hp.svg' %}" alt="logo" width="50px" height="50px">
                     <img src="{% static 'myapp/img/x.png' %}" alt="x" width="70px" height="15px">
-                    <img src="{% static 'myapp/img/Logo.svg' %}" alt="logo" style="margin-right: 100px;">
-                    <button type="submit">Подробнее</button>
-                </div>
+                    <img src="{% static 'myapp/img/Logo.svg' %}" alt="logo">
             </div>
+            
+            <div id="hp_text">
+                <p>Полное погружение вместе с HP</p>
+                <br>
+                <span>Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</span>
+                <div class="span"><img src="{% static 'myapp/img/Vector (1).svg' %}" alt=""> <span>Кристальная четкость изображения</span></div>
+                <div class="span"><img src="{% static 'myapp/img/Vector.svg' %}" alt=""> <span>Яркие насыщенные цвета</span></div>
+                <div class="span"><img src="{% static 'myapp/img/Vector (2).svg' %}" alt=""> <span>Быстрые движения и плавный геймплей</span></div>  
+            </div>
+
+            <button id="button2" type="submit">Подробнее</button>
+
         </div>
+    </div>
 
     <div class="buy_block">
         <div class="img_7"></div>
-        <div style="grid-column: 2;">
+        <div id="buy_text">
             <div style="margin: 5% 0% 0% 4%;">
-                <p style="font-size: 80px; margin-bottom: 3%;">Купить игру <br>Cyberpunk 2077</p>
+                <p id="buy_p">Купить игру <br>Cyberpunk 2077</p>
                 <span style="color: aqua;">В комплект входит:</span>
                 <div class="span"><img src="{% static 'myapp/img/Vector (4).svg' %}" alt=""><span>Футляр с игровыми дисками</span></div>
                 <div class="span"><img src="{% static 'myapp/img/Vector (3).svg' %}" alt=""><span>Футляр с кодом для загрузки игры и дисками (pc)</span></div>
                 <div class="span"><img src="{% static 'myapp/img/Vector (5).svg' %}" alt=""><span>Справочник с информацией об игровом мире</span></div>
             </div>
         </div>
-    </div>
+    </div>s
 
     <footer>
         <div class="footer_container">
@@ -157,6 +162,17 @@
                 <a href="" style="text-decoration: none; color: black; font-size: 20px; margin-right: 20px;">Лицензия</a>
                 <a href="" style="text-decoration: none; color: black; font-size: 20px;">Политика конфиденциальности</a>
             </div>
+        </div>
+        <div class="hr">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</div>
+    </footer>
+
+    <footer class="mob_footer">
+        <div class="footer_container">
+            <img src="{% static 'myapp/img/Logo.svg' %}" alt="">
+            <img src="{% static 'myapp/img/CD_Projekt_logo 1.svg' %}" alt="">            
+            <a href="">Лицензия</a>
+            <a href="">Политика конфиденциальности</a>
+        </div>
         </div>
         <div class="hr">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</div>
     </footer>
